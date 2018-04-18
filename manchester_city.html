@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+	<title>MANCESTER CITY</title>
+</head>
+<body>
+	<nav>
+		<ul class="Link">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="manchester_city.html">Manchester City</a></li>
+			<li><a href="resume.html">Resume</a></li>
+		</ul>
+	</nav>
+	<div class="Mancity">
+		<section class="Carabao">
+			<h1>MANCESTER CITY</h1>
+			<h2>!!2017-2018 Premier League Champion!!</h2>
+			<h2>!!2018 Carabao Cup Champion!!</h2>
+			<p><img src = "sources/carabao.jpg" alt="Carabao Cup"></p>
+		</section>
+		<section class="Emblem">
+			<img src = "sources/mancity.png" alt="Emblem of Mancity">
+			<p>Manchester City Football Club is a football club in Manchester, England. Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923.
+			</p>
+		</section>
+		<section class="youtube">
+			<iframe src="https://www.youtube.com/embed/4XSo5Z0hEAs" allowfullscreen></iframe>
+		</section>
+		<section class="Name">
+			<h3>Full Name</h3>
+			<p>Manchester City Football Club</p>
+		</section>
+		<section class="Founded">
+			<h3>Founded</h3>
+			<p>April 16th, 1894</p>
+		</section>
+		<section class="Ground">
+			<h3>Ground</h3>
+			<p>City of Manchester Stadium</p>
+			<img src = "sources/etihad_stadium.jpg" alt="Etihad Stadium">
+		</section>
+		<section class="Manager">
+			<h3>Manager</h3>
+			<p>Pep Guardiola</p>
+			<img src = "sources/pep.jpg" alt="Pep Guardiola">
+		</section>
+		<section class="Captain">
+			<h3>Captain</h3>
+			<p>Vincent Komapany</p>
+			<img src = "sources/kompany.png" alt="Vincent Kompany">
+		</section>
+		<section class="Best11">
+			<div class="slideshow-container">
+				<h3>My Manchester City Best 11</h3>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/ederson.png" alt="noimg">
+					<p>Ederson</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/mendy.png" alt="noimg">
+					<p>Benjamin Mendy</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/kompany.png" alt="noimg">
+					<p>Vincent Kompany</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/otamendi.png" alt="noimg">
+					<p>Nicolás Otamendi</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/walker.png" alt="noimg">
+					<p>Kyle Walker</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/fernandinho.png" alt="noimg">
+					<p>Fernandinho</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/silva.png" alt="noimg">
+					<p>David Silva</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/de_bruyne.png" alt="noimg">
+					<p>Kevin De Bruyne</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/sane.png" alt="noimg">
+					<p>Leroy Sané</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/aguero.png" alt="noimg">
+					<p>Sergio Agüero</p>
+				</div>
+				<div class="mySlides fade2">
+					<img class="main_slideImg" src="sources/sterling.png" alt="noimg">
+					<p>Raheem Sterling</p>
+				</div>
+				<div>
+					<a class="prev" onclick="plusSlides(-1)">◀</a>
+					<a class="next" onclick="plusSlides(1)">▶</a>
+				</div>
+				<div style="text-align: center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span>
+					<span class="dot" onclick="currentSlide(9)"></span>
+					<span class="dot" onclick="currentSlide(10)"></span>
+					<span class="dot" onclick="currentSlide(11)"></span>
+				</div>
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1}
+							if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";
+								dots[slideIndex-1].className += " active";
+							}
+						</script>
+					</section>
+				</div>
+			</body>
+			</html>

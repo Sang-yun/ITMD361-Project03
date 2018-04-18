@@ -1,0 +1,153 @@
+.Link
+{
+	width: 100%;
+	background-color: #00FFFF;
+	font-size: 20px;
+	text-align: center;
+}
+
+.Link li {
+	display:inline-block; 
+}
+
+.Link li a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.Me
+{
+	background-color: #1E90FF;
+	font-family:Arial;
+	text-align: center;
+}
+
+.Me img
+{
+	width: 300px;
+}
+
+.Me h1
+{
+	font-size: 50px;
+}
+
+
+#map {
+	width: 30%;
+	height: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Mancity
+{
+	text-align: center;
+	color: #00BFFF;
+	font-size: 40px;
+}
+
+.Carabao img
+{
+	width: 100%;
+}
+
+.Emblem
+{
+	border: 1px;
+	font-size: 40px;
+	font-family: Arial;
+	color: black;
+}
+
+.Emblem img
+{
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.youtube iframe
+{
+	width: 854px;
+	height: 480px;
+}
+
+.Name, .Founded, .Ground, .Manager, .Captain
+{
+	font-family:Viner Hand ITC;
+	font-size: 20px;
+}
+
+.Name img, .Founded img, .Ground img, .Manager img, .Captain img
+{
+	width: 300px;
+}
+.mySlides {display: none}
+
+.slideshow-container
+{
+	color: black;
+	font-family: Arial;
+	position: relative;
+  	margin: auto;
+  	max-width: 500px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev{
+	left: 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+}
+
+.Resume
+{
+	text-align: center;
+	font-family: Arial;
+}
+
+.Education, .Experience, .Skills, .Activities
+{
+	font-family: Arial;
+	padding: 5px;
+}
